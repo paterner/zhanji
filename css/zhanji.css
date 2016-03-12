@@ -44,18 +44,40 @@
 .header .header_inner ul li.on:after{
 	border-top: 12px solid #ffe797;
 }
-
-.wrapper .bg_first{
-	background: url('../img/bg_first.png') no-repeat;
-	background-size: contain;
-	height: 675px;
-	margin-top: -79px;
+.wrapper{
+	position: absolute;
+	top: 17px;
+	left: 0;
+}
+.wrapper_width{
+	width: 1300px;
+	margin: 0 auto;
+}
+.bg_first_img{
 	position: relative;
+	width: 100%;
+	display: block;
 }
 
-.wrapper .bg_first .logo_first {
+.bg_first .logo_first {
 	position: absolute;
 	top: -20px;
 	left: 10%;
 	z-index: 3;	
+}
+
+.first_bottom{
+	width: 1300px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -650px;
+}
+
+.first_bottom code{
+	float: left;
+}
+
+.second .slider{
+
 }
