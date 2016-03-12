@@ -29,6 +29,8 @@
 				<div class="download">
 					<a href="###" class="ios_download"></a>
 					<a href="###" class="android_download"></a>
+					<a href="###" class="lipin_code"></a>
+					<a href="###" class="vedio_download"></a>
 				</div>
 			</div>
 		</div>
@@ -152,10 +154,35 @@
 			</div>
 		</div>
 		<div class="wrapper_width five">
-			<!-- // TO DO -->
+			<div class="five-left">
+				<a href="###" class="more"></a>
+				<img src="" alt="" class="five-img1">
+				<img src="" alt="" class="five-img2">
+				<img src="" alt="" class="five-img3">
+			</div>
+			<div class="five-right">
+				<p class="claerfix">
+					<span>客服QQ：800111230</span>
+					<span>官方Q群：xxxxxxxxx</span>
+				</p>
+				<p class="claerfix">
+					<span>微博：@XXXXX </span>
+					<span>微信公众号：xxxxxxxx</span>
+				</p>
+				<p>客服邮箱：bg_kefu@kongzhong.com</p>
+				<p>贴吧：http://tieba.baidu.com/f?kw=哈哈</p>
+			</div>
 		</div>
 		<div class="wrapper_width six">
-			<!-- // TO DO -->
+			<ul class="clearfix">
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+				<li><a href="##"><img src="" alt=""></a></li>
+			</ul>
 		</div>
 		<div class="footer">
 			<p>Copyright©KONGZHONG ALL RIGHTS RESERVED. 北京空中信使信息技术有限公司版权所有</p>
@@ -171,7 +198,7 @@
 		</ul>
 		<div class="gotoTop">回到顶部</div>
 	</div>
-	<div class="pop-bg">
+	<div class="pop-bg" id="popImg">
 		<div class="pop-img	pop1"><img src="img/popimg1.png" alt=""><i></i></div>
 		<div class="pop-img	pop2"><img src="img/popimg2.png" alt=""><i></i></div>
 		<div class="pop-img	pop3"><img src="img/popimg3.png" alt=""><i></i></div>
@@ -180,33 +207,53 @@
 		<div class="pop-img	pop6"><img src="img/popimg6.png" alt=""><i></i></div>
 		<div class="pop-img	pop7"><img src="img/popimg7.png" alt=""><i></i></div>
 	</div>
+	<div class="pop-bg" id="popVedio">
+		<div class="pop-vedio" id="vedio1">
+			<i></i>
+			<embed id="bcloud" src="http://yuntv.letv.com/bcloud.swf" allowfullscreen="true" quality="high" width="800" height="500" align="middle" allowscriptaccess="always" flashvars="uu=661c07e19e&amp;vu=8542b9a489&amp;auto_play=0&amp;gpcflag=1&amp;width=640&amp;height=360" type="application/x-shockwave-flash">
+		</div>
+		<div class="pop-vedio" id="vedio2">
+			<i></i>
+			<embed id="bcloud" src="http://yuntv.letv.com/bcloud.swf" allowfullscreen="true" quality="high" width="800" height="500" align="middle" allowscriptaccess="always" flashvars="uu=661c07e19e&amp;vu=8542b9a489&amp;auto_play=0&amp;gpcflag=1&amp;width=640&amp;height=360" type="application/x-shockwave-flash">
+		</div>
+	</div>
 </body>
 <script src="js/jquery-1.9.0.min.js"></script>
 <script src="js/unslider.js"></script>
 <script>
 	$(function() {
-<<<<<<< HEAD
-	    $('.slider').unslider();
 	    //弹层
 	    $('.wrapper_fourth_box > div').on('click', function() {
 	    	var index = $(this).attr('class').split('_')[1];
-	    	$('.pop-bg').show();
+	    	$('#popImg').show();
 	    	$('.pop' + index).show();
 	    });
 	    $('.pop-img').find('i').on('click', function() {
 	    	$('.pop-img').hide();
-	    	$('.pop-bg').hide();
+	    	$('#popImg').hide();
 	    });
-=======
+	    //视频
+	    $('.vedio_download').on('click', function() {
+	    	$('#popVedio').show();
+	    	$('#vedio1').show();
+	    });
+	    $('.fourth_vedio').on('click', function() {
+	    	$('#popVedio').show();
+	    	$('#vedio2').show();
+	    });
+	    $('#popVedio').find('i').on('click', function() {
+	    	$('.pop-vedio').hide();
+	    	$('#popVedio').hide();
+	    });
+	    //轮播
 	    $('.slider').unslider({
 	    	arrows: false,
-			fluid: false,
-			dots: true
+				fluid: false,
+				dots: true
 	    });
 	    $('.gotoTop').click(function(){
 	    	$(window).scrollTop(0,0)
 	    })
->>>>>>> 831087591aee8e961fd6577bb6a5809de4e04d9b
 	});
 </script>
 </html>

@@ -96,22 +96,38 @@
 	height: 116px;
 	background: url('../img/download_ios.png');	
 	position: absolute;
-    left: 13px;
-    top: 125px;
+  left: 13px;
+  top: 125px;
+  z-index: 99;
 }
 .android_download{
 	width: 278px;
 	height: 135px;
 	background: url('../img/download_android.png');	
 	position: absolute;
-    left: 14px;
-    top: 205px;
+  left: 13px;
+  top: 205px;
+  z-index: 98;
 }
 .ios_download:hover{
 	background: url('../img/download_ios_hover.png');	
 }
 .android_download:hover{
 	background: url('../img/download_android_hover.png');	
+}
+.lipin_code {
+	position: absolute;
+	width: 280px;
+	height: 205px;
+	left: 307px;
+	top: 120px;
+}
+.vedio_download {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	left: 615px;
+	top: 80px;
 }
 /*second*/
 .second{
@@ -133,9 +149,8 @@
 .slider ul li img{display:block;width: 100%;height: 100%;}
 .slider .dots {
 	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 20px;
+	right: 10px;
+	bottom: 10px;
 	text-align: center;
 }
 .slider .dots li {
@@ -451,6 +466,105 @@ ul.news_list_content li:first-child i{
 	margin-left: -481px;
 	margin-top: -217px;
 }
+.pop-vedio {
+	width: 870px;
+	height: 525px;
+	background: url(../img/popvedio.png) no-repeat;
+	margin-left: -450px;
+	margin-top: -277px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.pop-bg .pop-vedio i {
+	width: 40px;
+	height: 40px;
+	top: 30px;
+	right: 18px;
+}
+/*five*/
+.wrapper_width.five{
+	height: 252px;
+	position: relative;
+}
+.five-left {
+	position: absolute;
+	width: 917px;
+	height: 252px;
+	background: url(../img/game-is.png) no-repeat;
+}
+.five-left img {
+	display: block;
+	width: 220px;
+	height: 120px;
+	top: 102px;
+	position: absolute;
+}
+.five-left a {
+	display: block;
+	width: 71px;
+	height: 26px;
+	position: absolute;
+	left: 235px;
+	top: 24px;
+	cursor: pointer;
+}
+.five-left .five-img1 {
+	left: 25px;
+}
+.five-left .five-img2 {
+	left: 276px;
+}
+.five-left .five-img3 {
+	left: 527px;
+}
+.five-right {
+	position: absolute;
+	width: 322px;
+	height: 147px;
+	right: 0;
+	top: 25px;
+	background: url(../img/game-lianxi.png) no-repeat;
+	color: #abaaaa;
+	font-size: 14px;
+	padding: 80px 25px 0;
+}
+.five-right p {
+	height: 14px;
+	margin-bottom: 20px;
+}
+.five-right p span:first-child {
+	float: left;
+	display: block;
+	width: 170px;
+}
+.five-right p span:last-child {
+	float: left;
+}
+/*six*/
+.wrapper_width.six {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	height: 168px;
+	background: url(../img/game-hezuo.png) no-repeat;
+	background-size: 1300px 168px;
+	-webkit-background-size: 1300px 168px;
+	position: relative;
+}
+.six ul {
+	position: absolute;
+	top: 70px;
+	left: 25px;
+}
+.six ul li {
+	width: 165px;
+	height: 70px;
+	float: left;
+	margin-right: 16px;
+}
+.six ul li:last-child {
+	margin-right: 0;
+}
+/*footer*/
 .footer{
 	height: 100px;
 	padding-top: 38px;
@@ -490,4 +604,5 @@ ul.news_list_content li:first-child i{
 	bottom: 0;
 	left: 50%;
 	margin-left: -42px;
+	cursor: pointer;
 }
