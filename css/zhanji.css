@@ -72,29 +72,66 @@
 .first_bottom{
 	width: 1300px;
 	position: absolute;
-	bottom: 0;
+	bottom: -100px;
 	left: 50%;
 	margin-left: -650px;
 }
 
-.first_bottom code{
-	float: left;
+.first_bottom .code{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.first_bottom .download{
+	background: url('../img/lipinma.png');
+	width: 1067px;
+	height: 343px;
+	background-size: cover;
+	float: right;
+	position: relative;
+}
+.ios_download{
+	width: 278px;
+	height: 116px;
+	background: url('../img/download_ios.png');	
+	position: absolute;
+    left: 13px;
+    top: 125px;
+}
+.android_download{
+	width: 278px;
+	height: 135px;
+	background: url('../img/download_android.png');	
+	position: absolute;
+    left: 14px;
+    top: 205px;
+}
+.ios_download:hover{
+	background: url('../img/download_ios_hover.png');	
+}
+.android_download:hover{
+	background: url('../img/download_android_hover.png');	
 }
 /*second*/
 .second{
-	margin-top: 40px;
+	margin-top: 120px;
 }
 .slider_wrapper{
-    width: 587px;
-    height: 349px;
+	width: 603px;
+	height: 365px;
 	border: 8px solid #000;
-}
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
+	box-sizing: border-box;
 
+}
+.slider { position: relative; overflow: auto; }
+.slider li { list-style: none; }
+.slider ul li { float: left; }
+.slider ul li img{display:block;width: 100%;height: 100%;}
 .news_list{
 	width: 686px;
+	height: 365px;
+	overflow: hidden;
 	float: right;
 	position: relative;
 }
@@ -138,7 +175,35 @@ ul.news_list_content{
 }
 
 ul.news_list_content li{
-	list-style: 
+	height: 30px;
+	line-height: 30px;
+	color: #484848;
+	padding:0 10px 0 30px;
+}
+ul.news_list_content li a{
+	color: #484848;
+}
+ul.news_list_content li i{
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: #484848;
+	float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+ul.news_list_content li:first-child{
+	height: 63px;
+	line-height: 63px;
+	background: #484848;
+}
+ul.news_list_content li:first-child a{
+	color: #fff;
+}
+ul.news_list_content li:first-child i{
+	background: #000;
+	margin-top: 25px;
 }
 /*third*/
 .third{
