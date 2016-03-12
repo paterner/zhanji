@@ -228,8 +228,8 @@ ul.news_list_content li i{
 }
 
 ul.news_list_content li:first-child{
-	height: 63px;
-	line-height: 63px;
+	height: 62px;
+	line-height: 62px;
 	background: #484848;
 }
 ul.news_list_content li:first-child a{
