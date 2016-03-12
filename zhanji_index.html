@@ -157,9 +157,19 @@
 		<div class="wrapper_width six">
 			<!-- // TO DO -->
 		</div>
+		<div class="footer">
+			<p>Copyright©KONGZHONG ALL RIGHTS RESERVED. 北京空中信使信息技术有限公司版权所有</p>
+			<p>客服QQ：800111230 官方玩家群：485876078 客服邮箱：bg_kefu@kongzhong.com隐私政策声明</p>
+		</div>
 	</div>
-	<div class="footer">
-		
+	<div class="fixed">
+		<ul>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+			<li><a href="###"></a></li>
+		</ul>
+		<div class="gotoTop">回到顶部</div>
 	</div>
 	<div class="pop-bg">
 		<div class="pop-img	pop1"><img src="img/popimg1.png" alt=""><i></i></div>
@@ -175,6 +185,7 @@
 <script src="js/unslider.js"></script>
 <script>
 	$(function() {
+<<<<<<< HEAD
 	    $('.slider').unslider();
 	    //弹层
 	    $('.wrapper_fourth_box > div').on('click', function() {
@@ -186,6 +197,16 @@
 	    	$('.pop-img').hide();
 	    	$('.pop-bg').hide();
 	    });
+=======
+	    $('.slider').unslider({
+	    	arrows: false,
+			fluid: false,
+			dots: true
+	    });
+	    $('.gotoTop').click(function(){
+	    	$(window).scrollTop(0,0)
+	    })
+>>>>>>> 831087591aee8e961fd6577bb6a5809de4e04d9b
 	});
 </script>
 </html>
