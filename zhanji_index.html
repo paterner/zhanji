@@ -139,17 +139,16 @@
 			</div>
 		</div>
 		<div class="wrapper_width fourth">
-			<!-- // TO DO -->
 			<img src="img/warp_fourth_title.png" alt="" class="fourth_title">
 			<div class="wrapper_fourth_box">
-				<div class="fourth_img1"></div>
-				<div class="fourth_img2"></div>
-				<div class="fourth_img3"></div>
-				<div class="fourth_vedio"></div>
-				<div class="fourth_img4"></div>
-				<div class="fourth_img5"></div>
-				<div class="fourth_img6"></div>
-				<div class="fourth_img7"></div>
+				<div class="fourthimg_1"></div>
+				<div class="fourthimg_2"></div>
+				<div class="fourthimg_3"></div>
+				<a class="fourth_vedio" href="###"></a>
+				<div class="fourthimg_4"></div>
+				<div class="fourthimg_5"></div>
+				<div class="fourthimg_6"></div>
+				<div class="fourthimg_7"></div>
 			</div>
 		</div>
 		<div class="wrapper_width five">
@@ -172,11 +171,33 @@
 		</ul>
 		<div class="gotoTop">回到顶部</div>
 	</div>
+	<div class="pop-bg">
+		<div class="pop-img	pop1"><img src="img/popimg1.png" alt=""><i></i></div>
+		<div class="pop-img	pop2"><img src="img/popimg2.png" alt=""><i></i></div>
+		<div class="pop-img	pop3"><img src="img/popimg3.png" alt=""><i></i></div>
+		<div class="pop-img	pop4"><img src="img/popimg4.png" alt=""><i></i></div>
+		<div class="pop-img	pop5"><img src="img/popimg5.png" alt=""><i></i></div>
+		<div class="pop-img	pop6"><img src="img/popimg6.png" alt=""><i></i></div>
+		<div class="pop-img	pop7"><img src="img/popimg7.png" alt=""><i></i></div>
+	</div>
 </body>
 <script src="js/jquery-1.9.0.min.js"></script>
 <script src="js/unslider.js"></script>
 <script>
 	$(function() {
+<<<<<<< HEAD
+	    $('.slider').unslider();
+	    //弹层
+	    $('.wrapper_fourth_box > div').on('click', function() {
+	    	var index = $(this).attr('class').split('_')[1];
+	    	$('.pop-bg').show();
+	    	$('.pop' + index).show();
+	    });
+	    $('.pop-img').find('i').on('click', function() {
+	    	$('.pop-img').hide();
+	    	$('.pop-bg').hide();
+	    });
+=======
 	    $('.slider').unslider({
 	    	arrows: false,
 			fluid: false,
@@ -185,6 +206,7 @@
 	    $('.gotoTop').click(function(){
 	    	$(window).scrollTop(0,0)
 	    })
+>>>>>>> 831087591aee8e961fd6577bb6a5809de4e04d9b
 	});
 </script>
 </html>
