@@ -47,6 +47,7 @@ header {
 }
 .page1 {
   background: #d1d1d1;
+  overflow: hidden;
 }
 .page2 {
   background: #d1d1d1;
@@ -73,6 +74,7 @@ header {
   left: 0;
   top: 0;
   z-index: 98;
+  overflow: hidden;
 }
 .page1 .page1-part1 {
   width: 100%;
