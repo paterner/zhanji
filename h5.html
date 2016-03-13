@@ -20,6 +20,10 @@
     <!-- page1 start -->
     <section class="page page1" data-touch="touch" id="page_1">
       <div class="page1-bottom"></div>
+      <div class="page1-bg">
+        <div class="page1-part1"></div>
+        <div class="page1-part2"></div>
+      </div>
     </section>
     <!-- page1 end -->
     <!-- page2 start -->
@@ -388,6 +392,12 @@
       <div class="page2-bottom"></div>
     </section>
     <!-- page_tese end -->
+
+    <!-- 弹层 start -->
+    <div class="pop-bg">
+      <div class="pop-img"><img src="img/popimg1.png" alt=""><i></i></div>
+    </div>
+    <!-- 弹层 end -->
   </div>
   <script src="js/zepto.min.js"></script>
   <script src="js/slide.js"></script>
@@ -402,6 +412,9 @@
       timingFunction: 'ease',     // 动画曲线
       callback: function() {}     // 切换后的回调
     });
+    //index
+    var h = $(window).height();
+    $('.page1-bg').height(h*2).find('div').height(h);
 
     $('.tab-btn').on('click', function() {
       var $active = $('.active').length > 0 ? $('.active') : $('#page_1')
@@ -426,6 +439,18 @@
       var $active = $('.active').length > 0 ? $('.active') : $('#page_1');
       mySwipe.moveLeftIn($active, $('#page_2more'));
     });
+    //get more
+    $('.get_more').on('click', function() {
+      var _html = '<li><a href="###" class="clearfix"><span class="fl"><i></i>开学金币大抽奖！稳赚不赔！</span><span class="fr">02/19</span></a></li><li><a href="###" class="clearfix"><span class="fl"><i></i>开学金币大抽奖！稳赚不赔！</span><span class="fr">02/19</span></a></li><li><a href="###" class="clearfix"><span class="fl"><i></i>开学金币大抽奖！稳赚不赔！</span><span class="fr">02/19</span></a></li>';
+      $(this).siblings('.news_list_content').append(_html);
+    });
+    //激活
+    $('.jihuo-btn').on('click', function() {
+      $('.pop-bg').show();
+    });
+    $('.pop-img').find('i').on('click', function() {
+        $('.pop-bg').hide();
+      });
     //轮播
     OPMSlide({
       element:"#J_banner",
