@@ -671,3 +671,12 @@ ul.news_list_content li:first-child i{
 	margin-left: -42px;
 	cursor: pointer;
 }
+
+
+/*内容页面*/
+.main_head{
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(0,0,0, 0.5);
+	color: #fff;
+}
