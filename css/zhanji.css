@@ -674,9 +674,40 @@ ul.news_list_content li:first-child i{
 
 
 /*内容页面*/
+.main{
+	margin-top: -60px;
+	position: relative;
+}
+.main_content{
+	background: #d1d1d1;
+}
 .main_head{
 	height: 60px;
-	line-height: 60px;
+	line-height: 70px;
 	background-color: rgba(0,0,0, 0.5);
 	color: #fff;
+}
+.main_head h2{
+	margin-right: 10px;
+	line-height: 60px;
+}
+.main_head a{
+	float: left;
+	color: #fff;
+	margin:0 5px;
+}
+ul.main_content_menu{
+	border-bottom: 8px solid #000;
+}
+ul.main_content_menu li{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: -8px;
+}
+
+ul.main_content_list li{
+	height: 90px;
+	line-height: 90px;
+	color: #777;
+	border-bottom: 1px solid #777;
 }
