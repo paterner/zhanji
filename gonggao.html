@@ -91,5 +91,13 @@
 			<p>客服QQ：800111230 官方玩家群：485876078 客服邮箱：bg_kefu@kongzhong.com隐私政策声明</p>
 		</div>
 	</div>
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script>
+		$(function(){
+			$('.main_content_menu').find('li').on('click', function(){
+				$(this).addClass('on').siblings('li').removeClass('on')
+			})
+		})
+	</script>
 </body>
 </html>
