@@ -717,3 +717,59 @@ ul.main_content_list li{
 	float: left;
 	width: 25%;
 }
+/*视频页面*/
+.video_list {
+	margin-top: 25px;
+}
+.video_list li {
+	margin-bottom: 45px;
+	float: left;
+	width: 285px;
+	padding-right: 51px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #00091b;
+}
+.video_list li:nth-child(4n+4) {
+	padding-right: 0;
+}
+.video_list .video_content {
+	width: 265px;
+	height: 154px;
+	padding: 12px 10px;
+	background: url(../img/video_item_bg.png) no-repeat;
+	position: relative;
+}
+.video_list .video_content img {
+	width: 251px;
+	height: 157px;
+}
+.video_list .video_content i {
+	display: block;
+	width: 75px;
+	height: 66px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -33px;
+	margin-left: -38px;
+	background: url(../img/video_play_btn.png) no-repeat;
+	cursor: pointer;
+}
+.video_list h5 {
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+	width: 256px;
+	margin-left: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.video_list p {
+	color: #777;
+	font-size: 14px;
+	width: 256px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
