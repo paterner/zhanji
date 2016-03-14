@@ -293,3 +293,43 @@ ul.news_list_content li i{
   width: 100%;
   height: 100%;
 }
+.part1-vedio {
+  position: absolute;
+  display: block;
+  width: 18.6%;
+  height: 11.9%;
+  left: 46.9%;
+  top: 55.6%;
+  z-index: 1111;
+}
+.part2-vedio {
+  position: absolute;
+  display: block;
+  width: 21.4%;
+  height: 11.7%;
+  top: 53.1%;
+  left: 64.7%;
+  z-index: 1111;
+}
+.pop-bg .pop-vedio {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  z-index: 1000;
+  background: url(../img/video_bg.png) no-repeat center center;
+  background-size: 100%;
+  padding-top: 20px;
+  margin-top: 0;
+  margin-left: 0;
+}
+.videoplayer {
+  width: 100%;
+  display: -webkit-box;
+  height: 100%;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  text-align: center;
+}

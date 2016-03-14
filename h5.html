@@ -21,8 +21,12 @@
     <section class="page page1" data-touch="touch" id="page_1">
       <div class="page1-bottom"></div>
       <div class="page1-bg">
-        <div class="page1-part1"></div>
-        <div class="page1-part2"></div>
+        <div class="page1-part1">
+          <a href="javascript:;" class="part1-vedio"></a>
+        </div>
+        <div class="page1-part2">
+          <a href="javascript:;" class="part2-vedio"></a>
+        </div>
       </div>
     </section>
     <!-- page1 end -->
@@ -391,11 +395,34 @@
     </section>
     <!-- page_tese end -->
 
-    <!-- 弹层 start -->
-    <div class="pop-bg">
+    <!-- 弹层1 start -->
+    <div class="pop-bg" id="popJihuo">
       <div class="pop-img"><img src="img/popimg1.png" alt=""><i></i></div>
     </div>
-    <!-- 弹层 end -->
+    <!-- 弹层1 end -->
+    <!-- 弹层2 start -->
+    <div class="pop-bg" id="popXiazai">
+      <div class="pop-img"><img src="img/popimg1.png" alt=""><i></i></div>
+    </div>
+    <!-- 弹层2 end -->
+    <!-- 视频弹层1 start -->
+    <div class="pop-bg" id="popVedio1">
+      <div class="pop-vedio">
+        <div class="videoplayer">
+          <video id="video1" x-webkit-airplay="true" width="98%" height="98%" preload="none" src="http://v.wot.kongzhong.com/bg1.mp4" webkit-playsinline=""></video>
+        </div>
+      </div>
+    </div>
+    <!-- 视频弹层1 end -->
+    <!-- 视频弹层2 start -->
+    <div class="pop-bg" id="popVedio2">
+      <div class="pop-vedio">
+        <div class="videoplayer">
+          <video id="video2" x-webkit-airplay="true" width="98%" height="98%" preload="none" src="http://v.wot.kongzhong.com/bg1.mp4" webkit-playsinline=""></video>
+        </div>
+      </div>
+    </div>
+    <!-- 视频弹层2 end -->
   </div>
   <script src="js/zepto.min.js"></script>
   <script src="js/slide.js"></script>
@@ -444,11 +471,14 @@
     });
     //激活
     $('.jihuo-btn').on('click', function() {
-      $('.pop-bg').show();
+      $('#popJihuo').show();
+    });
+    $('.download-btn').on('click', function() {
+      $('#popXiazai').show();
     });
     $('.pop-img').find('i').on('click', function() {
-        $('.pop-bg').hide();
-      });
+      $('.pop-bg').hide();
+    });
     //轮播
     OPMSlide({
       element:"#J_banner",
@@ -459,6 +489,20 @@
       speed:500,
       delayTime:5000,
       res:true
+    });
+    //视频
+    $('.part1-vedio').on('touchend',function(){
+      $('#popVedio1').show();
+      document.getElementById('video1').play();
+    });
+    $('.part2-vedio').on('touchend',function(){
+      $('#popVedio2').show();
+      document.getElementById('video2').play();
+    })
+    $('.pop-vedio').on('touchend',function(){
+      $('.pop-bg').hide();
+      document.getElementById('video1').pause();
+      document.getElementById('video2').pause();
     });
     //首屏
     var page1 = document.querySelector('.page1-bg');
