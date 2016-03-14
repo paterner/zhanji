@@ -696,20 +696,44 @@ ul.news_list_content li:first-child i{
 	color: #fff;
 	margin:0 5px;
 }
+.main_content_menu{
+	padding-top: 40px;
+}
 ul.main_content_menu{
 	border-bottom: 8px solid #000;
 }
 ul.main_content_menu li{
 	float: left;
-	margin-right: 10px;
+	margin-left: 15px;
 	margin-bottom: -8px;
 }
-
+ul.main_content_menu li a{
+	display: block;
+	background: url(../img/menu_select.png) no-repeat;
+	width: 157px;
+	height: 70px;
+	font-size: 28px;
+	line-height: 70px;
+	text-align: center;
+	color: #fff;
+}
+ul.main_content_menu li.on{
+	margin-bottom: -10px;
+}
+ul.main_content_menu li.on a{
+	color: #000;
+	background: url(../img/menu.png) no-repeat;
+}
 ul.main_content_list li{
 	height: 90px;
 	line-height: 90px;
 	color: #777;
 	border-bottom: 1px solid #777;
+}
+
+ul.main_content_list li a{
+	color: #777;
+	font-size: 20px;
 }
 
 /*礼包页面*/
@@ -762,4 +786,19 @@ ul.main_content_list li{
 .libao_ios_download{
 	top: auto;
 	bottom: 0;
+}
+
+.page ul{
+	text-align: center;
+	padding: 20px;
+}
+.page ul li{
+	display: inline-block;
+	padding: 10px 15px;
+	background: #000;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.page ul li a{
+	color: #fff;
 }
