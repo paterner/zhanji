@@ -711,3 +711,9 @@ ul.main_content_list li{
 	color: #777;
 	border-bottom: 1px solid #777;
 }
+
+/*礼包页面*/
+.lb_code_list li{
+	float: left;
+	width: 25%;
+}
