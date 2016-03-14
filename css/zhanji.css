@@ -713,7 +713,53 @@ ul.main_content_list li{
 }
 
 /*礼包页面*/
+.libao{
+	padding-bottom: 50px;
+}
+.libao h2{
+	font-size: 50px;
+	color: #000;
+	border-bottom: 4px solid #000;
+	padding: 50px 0 20px;
+	margin-bottom: 30px;
+}
+.libao h3{
+	font-size: 30px;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.libao p{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+.lb_code_list{
+	margin-top: 80px;
+}
 .lb_code_list li{
 	float: left;
 	width: 25%;
+	text-align: center;
+}
+.lb_code_download{
+	margin-top: 16px;
+}
+.lb_download{
+	margin-top: 57px;
+	margin-left: 20px;
+	position: relative;
+}
+.libao_ios_download, .libao_android_download{
+	position: absolute;
+	display: block;
+	width: 320px;
+	height: 100px;
+	left: 0;
+	top: 0;
+}
+
+.libao_ios_download{
+	top: auto;
+	bottom: 0;
 }
