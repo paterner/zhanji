@@ -158,11 +158,11 @@ if (typeof Zepto === 'undefined') {
             $(nextObj).removeClass('fn-hide')
                 .css({
                     'z-index':_this.zIndex,
-                    'transform': 'translateX(100%)',
-                    '-webkit-transform': 'translateX(100%)'
+                    'transform': 'translate3D(100%,0,0)',
+                    '-webkit-transform': 'translate3D(100%,0,0)'
                 }).animate({
-                    'transform': 'translateX(0)',
-                    '-webkit-transform': 'translateX(0)'},
+                    'transform': 'translate3D(0,0,0)',
+                    '-webkit-transform': 'translate3D(0,0,0)'},
                 _this.animationDuration,
                 _this.timingFunction,
                 function() {

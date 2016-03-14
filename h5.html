@@ -26,6 +26,13 @@
         </div>
         <div class="page1-part2">
           <a href="javascript:;" class="part2-vedio"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-1"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-2"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-3"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-4"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-5"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-6"></a>
+          <a href="javascript:;" class="tese-btn" id="tese-7"></a>
         </div>
       </div>
     </section>
@@ -423,6 +430,17 @@
       </div>
     </div>
     <!-- 视频弹层2 end -->
+    <!-- 七大特色弹层 start -->
+    <div class="pop-bg" id="popTese">
+      <div class="pop-tese pop1"><img src="img/popimg1.png" alt=""><i></i></div>
+      <div class="pop-tese pop2"><img src="img/popimg2.png" alt=""><i></i></div>
+      <div class="pop-tese pop3"><img src="img/popimg3.png" alt=""><i></i></div>
+      <div class="pop-tese pop4"><img src="img/popimg4.png" alt=""><i></i></div>
+      <div class="pop-tese pop5"><img src="img/popimg5.png" alt=""><i></i></div>
+      <div class="pop-tese pop6"><img src="img/popimg6.png" alt=""><i></i></div>
+      <div class="pop-tese pop7"><img src="img/popimg7.png" alt=""><i></i></div>
+    </div>
+    <!-- 七大特色弹层 end -->
   </div>
   <script src="js/zepto.min.js"></script>
   <script src="js/slide.js"></script>
@@ -444,7 +462,7 @@
     $('.tab-btn').on('click', function() {
       var $active = $('.active').length > 0 ? $('.active') : $('#page_1')
           ,index = $(this).attr('id').split('_')[1];
-      mySwipe.moveLeftIn($active, $('#page_'+index));
+      mySwipe.moveUpIn($active, $('#page_'+index));
     });
     //tab
     $('.title').find('li').on('click', function() {
@@ -457,12 +475,12 @@
     //back
     $('.backindex-btn').on('click', function() {
       var $active = $('.active').length > 0 ? $('.active') : $('#page_1');
-      mySwipe.moveLeftIn($active, $('#page_1'));
+      mySwipe.moveUpIn($active, $('#page_1'));
     });
     //list more
     $('.list_more').on('click', function() {
       var $active = $('.active').length > 0 ? $('.active') : $('#page_1');
-      mySwipe.moveLeftIn($active, $('#page_2more'));
+      mySwipe.moveUpIn($active, $('#page_2more'));
     });
     //get more
     $('.get_more').on('click', function() {
@@ -479,6 +497,16 @@
     $('.pop-img').find('i').on('click', function() {
       $('.pop-bg').hide();
     });
+    //七大特色
+    $('.tese-btn').on('click', function() {
+      $('#popTese').show();
+      var index = $(this).attr('id').split('-')[1];
+      $('.pop'+index).show();
+    });
+    $('#popTese').find('i').on('click', function() {
+      $('.pop-tese').hide();
+      $('#popTese').hide();
+    })
     //轮播
     OPMSlide({
       element:"#J_banner",
