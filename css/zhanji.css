@@ -604,6 +604,7 @@ ul.news_list_content li:first-child i{
 }
 .five-right p span:last-child {
 	float: left;
+	margin-left:15px;
 }
 /*six*/
 .wrapper_width.six {
@@ -625,6 +626,7 @@ ul.news_list_content li:first-child i{
 	height: 70px;
 	float: left;
 	margin-right: 16px;
+	background:#fff;
 }
 .six ul li:last-child {
 	margin-right: 0;
@@ -861,4 +863,31 @@ ul.main_content_list li a{
 }
 .page ul li a{
 	color: #fff;
+}
+
+/* 敬请期待 */
+.pop-bg .pop-qidai {
+	position: absolute;
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+	display: block;
+	left: 0;
+	top: 20%;
+}
+.pop-bg .pop-qidai .pop-qidai-box {
+	display: inline-block;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.pop-bg .pop-qidai img {
+
+}
+.pop-bg .pop-qidai i {
+	width: 34px;
+	height: 30px;
+	right: 13px;
+	top: 28px;
+	z-index: 1001;
 }

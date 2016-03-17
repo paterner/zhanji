@@ -49,6 +49,7 @@ header {
 .page {
   height: 100%;
   z-index: 99;
+  overflow: hidden;
 }
 .page1 {
   background: #d1d1d1;
@@ -143,13 +144,14 @@ header {
 .banner .banner-shadow{background:#000;position:absolute;width:100%;opacity:.1;height:1.6em;bottom:0;left:0;z-index:1}
 .news_list{
   width: 100%;
-  height: 256px;
+  height: 300px;
   overflow: hidden;
   position: absolute;
   left: 0;
   top: 280px;
-  overflow-y: scroll;
-  z-index: 99;
+  /*overflow-y: scroll;*/
+  overflow: hidden;
+  z-index: 101;
 }
 .news_list ul.title{
   border-bottom: 4px solid #000;
@@ -184,7 +186,13 @@ header {
   text-align: center;
 }
 ul.news_list_content {
-  margin-top: 6px;
+  margin-top: 4px;
+  height: 210px;
+  overflow-y: scroll;
+}
+.page3 .news_list .news_list_content,
+.page2_more .news_list .news_list_content {
+  height: 330px;
 }
 ul.news_list_content li{
   height: 30px;
@@ -192,6 +200,9 @@ ul.news_list_content li{
   color: #484848;
   padding:0 10px;
   font-size: 11px;
+}
+ul.news_list_content li:last-child{
+  margin-bottom: 20px;
 }
 ul.news_list_content li a{
   color: #484848;
@@ -288,10 +299,10 @@ ul.news_list_content li i{
   position: absolute;
   display: block;
   /*background-color: #fff;*/
-  width: 15px;
-  height: 15px;
-  right: 5px;
-  top: 5px;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 13px;
   z-index: 9996;
 }
 .pop-bg div img {
@@ -392,9 +403,11 @@ ul.news_list_content li i{
   top: 20%;
   display: none;
 }
-.pop-bg .pop-tese i {
+/*.pop-bg .pop-tese i {
   top: 15px;
-}
-.pop-bg .pop5 i {
+}*/
+/*.pop-bg .pop5 i {
   top: 30px;
-}
+}*/
+.pppp1{position: absolute; display:block;width:110px;height:38px;bottom: 8px;left: 80px;z-index: 9999;}
+.pppp2{position: absolute; display:block;width:110px;height:38px;bottom: 8px;left: 200px;z-index: 9999;}
